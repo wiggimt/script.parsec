@@ -2,7 +2,7 @@ import xbmc
 import xbmcaddon
 import xbmcgui
 
-PLUGIN_ID = "script.parsec"
+PLUGIN_ID = "script.parsec-windows"
 SPECIAL_PATH = "special://home/addons/{0}/resources/".format(PLUGIN_ID)
 
 ADDON = xbmcaddon.Addon()
