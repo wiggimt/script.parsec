@@ -1,1 +1,1 @@
-cmd -c "%appdata%\Parsec\electron\parsec.exe" %2
+cmd /C "%appdata%\Parsec\electron\parsec.exe" %2

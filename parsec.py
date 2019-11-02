@@ -100,4 +100,4 @@ else:
 
 
 import subprocess
-subprocess.call("cmd.exe -c " + PARSEC_LAUNCHER, shell=True)
+subprocess.call("cmd.exe /C " + PARSEC_LAUNCHER, shell=True)
