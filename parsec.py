@@ -94,10 +94,10 @@ PARSEC_ARGS = PARSEC_BUTTON + ":" + KEYBOARD_PASSTHROUGH + ":" + WAN_QUALITY + "
 
 
 if HEADLESS_MODE == "true":
-    PARSEC_LAUNCHER = RESOURCE_PATH + "parsec-launcher.sh " + OS_USER + " " + RESOURCE_PATH + " server_id='" + SERVER_ID + "':" + PARSEC_ARGS
+    PARSEC_LAUNCHER = RESOURCE_PATH + "parsec.bat " + OS_USER + " " + RESOURCE_PATH + " server_id='" + SERVER_ID + "':" + PARSEC_ARGS
 else:
-    PARSEC_LAUNCHER = RESOURCE_PATH + "parsec-launcher.sh " + OS_USER + " " + RESOURCE_PATH + " " + PARSEC_ARGS
+    PARSEC_LAUNCHER = RESOURCE_PATH + "parsec.bat " + OS_USER + " " + RESOURCE_PATH + " " + PARSEC_ARGS
 
 
 import subprocess
-subprocess.call("sh " + PARSEC_LAUNCHER, shell=True)
+subprocess.call("cmd.exe -c " + PARSEC_LAUNCHER, shell=True)

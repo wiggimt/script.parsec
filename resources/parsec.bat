@@ -1,0 +1,1 @@
+cmd -c "%appdata%\Parsec\electron\parsec.exe"
